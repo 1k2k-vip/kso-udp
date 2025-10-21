@@ -274,7 +274,7 @@ HTML = """<!doctype html>
 {% if not authed %}
   <div class="login-card">
     <div class="center"><img class="logo" src="{{ logo }}" alt="DEV-U PHOE KAUNT"></div>
-    <h3 class="center">DEV-U PHOE KAUNT</h3>
+    <h3 class="center">KSO-VIP</h3>
     <p class="center muted" style="margin-top:0">ZIVPN User Panel — Login</p>
     {% if err %}<div class="err">{{err}}</div>{% endif %}
     <form method="post" action="/login">
@@ -288,14 +288,14 @@ HTML = """<!doctype html>
 {% else %}
 
 <header>
-  <img src="{{ logo }}" alt="DEV-U PHOE KAUNT"
+  <img src="{{ logo }}" alt="KSO-VIP"
        style="height:56px;width:auto;display:block;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.15)">
   <div style="flex:1 1 auto">
     <h1>DEV-U PHOE KAUNT</h1>
     <div class="sub">ZIVPN User Panel</div>
   </div>
   <div style="display:flex;gap:8px;align-items:center">
-    <a class="btn" href="https://m.me/upkvpnfastvpn" target="_blank" rel="noopener">💬 Contact (Messenger)</a>
+    <a class="btn" href="https://m.me/kyawsoe.oo.1292019" target="_blank" rel="noopener">💬 Contact (Messenger)</a>
     <a class="btn" href="/logout">Logout</a>
   </div>
 </header>
