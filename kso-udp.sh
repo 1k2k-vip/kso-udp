@@ -789,14 +789,14 @@ HTML = """<!doctype html>
 {% else %}
 
 <header>
-  <img src="{{ logo }}" alt="DEV-U PHOE KAUNT"
+  <img src="{{ logo }}" alt="KSO-VIP"
        style="height:56px;width:auto;display:block;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.15)">
   <div style="flex:1 1 auto">
-    <h1>DEV-U PHOE KAUNT</h1>
+    <h1>KSO-VIP</h1>
     <div class="sub">ZIVPN User Panel</div>
   </div>
   <div style="display:flex;gap:8px;align-items:center">
-    <a class="btn" href="https://m.me/upkvpnfastvpn" target="_blank" rel="noopener">💬 Contact (Messenger)</a>
+    <a class="btn" href="https://m.me/kyawsoe.oo.1292019" target="_blank" rel="noopener">💬 Contact (Messenger)</a>
     <a class="btn" href="/logout">Logout</a>
   </div>
 </header>
