@@ -1,8 +1,7 @@
-
 #!/bin/bash
 # ZIVPN UDP Server + Web UI (Myanmar) - No Key Version
 # Author mix: Zahid Islam + UPK + DEV-U PHOE KAUNT
-# Features: No Key Gate, Auto Port Forwarding, Flask Web UI, User Sync
+# Features: Key Gate Removed, Flask Web UI, Auto Port Forwarding
 
 set -euo pipefail
 
@@ -11,7 +10,7 @@ B="\e[1;34m"; G="\e[1;32m"; Y="\e[1;33m"; R="\e[1;31m"; C="\e[1;36m"; M="\e[1;35
 LINE="${B}────────────────────────────────────────────────────────${Z}"
 say(){ echo -e "$1"; }
 
-echo -e "\n$LINE\n${G}🌟 ZIVPN UDP Server + Web UI (Keyless Version)${Z}\n$LINE"
+echo -e "\n$LINE\n${G}🌟 ZIVPN UDP Server + Web UI (No Key Version)${Z}\n$LINE"
 
 # ===== Root check =====
 if [ "$(id -u)" -ne 0 ]; then
@@ -190,7 +189,7 @@ def sync_vpn():
 @app.route("/")
 def index():
     users = load_users()
-    for u in users: u['status'] = "Offline" # Simplification for status
+    for u in users: u['status'] = "Offline"
     return render_template_string(HTML, users=users, logo=LOGO_URL)
 
 @app.route("/login", methods=["POST"])
